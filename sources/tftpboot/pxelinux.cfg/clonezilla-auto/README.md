@@ -1,7 +1,5 @@
 # clonezilla-auto
 
-*Fork de la branche sambaedu-clonezilla servant pour des tests. NE PAS UTILISER EN PROD!
-*UTILISER LES FICHIERS DE LA BRANCHE officielle en tapant sur votre se3  ```git clone  https://github.com/SambaEdu/sambaedu-clonezilla.git```
 
 Ce script est fait pour être utilisé avec les serveurs se3 (sambaedu 3). Il utilise le logiciel libre 'clonezilla'.
 
