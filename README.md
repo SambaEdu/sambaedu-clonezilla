@@ -73,6 +73,6 @@ Pour gagner du temps ou lancer un clonage de façon non interactive, on peut don
 ```
 *Clonage completement automatique: ici on déploie l'image appelée xp_from_adminse3 sur le poste s219-5 avec clonezilla64 sans confirmation*.
 ```
-./clonezilla-auto.sh --mode 3 --arch clonezilla64 --ipsamba 172.20.0.6 --partage partimag --user clonezilla --mdp mdp123 --image xpv1  --parc 111\\|110 --noconfirm
+./clonezilla-auto.sh --mode 3 --arch clonezilla64 --ipsamba 172.20.0.6 --partage partimag --user clonezilla --mdp mdp123 --image xpv1  --parc 111\|110 --noconfirm
 ```
 *Clonage completement automatique: ici est indiqué que les machines des parcs 111 **ET** 110 vont restaurer l'image appelée xpv1. Cette image est située sur un partage samba d'ip "172.20.0.6", avec comme utilisateur "clonezilla" et son mot de passe "mdp123". Tout va se produire de façon transparente pour l'utilisateur.*
