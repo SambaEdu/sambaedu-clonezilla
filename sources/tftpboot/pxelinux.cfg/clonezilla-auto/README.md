@@ -43,7 +43,7 @@ Pour gagner du temps ou lancer un clonage de façon non interactive, on peut don
  
  **--arch** clonezilla64 pour la version  64 bits , ou '--arch clonezilla' pour la version 32 bits.
  
- **--parc** suivi du nom du parc pour lancer le script sur un parc donné, ajouter \| (antislash et pipe) entre les parcs pour en séléctionner plusieurs ex: --parc s217\|s218\|s219 .
+ **--parc** suivi du nom du parc pour lancer le script sur un parc donné, ajouter \| (antislash et pipe) entre les parcs pour en séléctionner plusieurs ex: --parc s217\\|s218\\|s219 .
  
  **--pxeperso** suivi du nom du fichier pxe à lancer .
  
@@ -75,7 +75,7 @@ Pour gagner du temps ou lancer un clonage de façon non interactive, on peut don
 
 *Ici on déploie l'image appelée xp_from_adminse3 sur un poste s219-4 avec clonezilla64 sans confirmation*.
 
-./clonezilla-auto.sh --mode 3 --arch clonezilla64 --ipsamba 172.20.0.6 --partage partimag --user clonezilla --mdp mdp123 --image xpv1  --parc 111\|110 --noconfirm
+./clonezilla-auto.sh --mode 3 --arch clonezilla64 --ipsamba 172.20.0.6 --partage partimag --user clonezilla --mdp mdp123 --image xpv1  --parc 111\\110 --noconfirm
 
 *Clonage complet: ici est indiqué que les machines des parcs 111 **ET** 110 vont restaurer l'image appelée xpv1. Cette image est située sur un partage samba d'ip "172.20.0.6", avec comme utilisateur "clonezilla" et son mot de passe "mdp123". Tout va se produire de façon transparente pour l'utilisateur.*
 
