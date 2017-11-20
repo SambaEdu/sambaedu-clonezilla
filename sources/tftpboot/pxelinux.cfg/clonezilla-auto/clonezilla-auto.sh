@@ -761,7 +761,7 @@ label disk2
 label clonezilla
 #MENU LABEL Clonezilla restore "$choix" (partimag)
 KERNEL $CLONEZILLA/vmlinuz
-APPEND initrd=$CLONEZILLA/initrd.img boot=live config noswap nolocales edd=on nomodeset  ocs_prerun="mount -t cifs //$IPSAMBA/$PARTAGE /home/partimag/ -o user=$UTILISATEUR,password=$MDP "  ocs_live_run="ocs-sr  -e1 auto -e2  -r -j2  -p reboot restoredisk  $choix sda" ocs_live_extra_param="" keyboard-layouts="fr" ocs_live_batch="no" locales="fr_FR.UTF-8" vga=788 nosplash noprompt fetch=tftp://$se3ip/$CLONEZILLA/filesystem.squashfs
+APPEND initrd=$CLONEZILLA/initrd.img boot=live config noswap nolocales edd=on nomodeset  ocs_prerun="mount -t cifs //$IPSAMBA/$PARTAGE /home/partimag/ -o user=$UTILISATEUR,password=$MDP "  ocs_live_run="ocs-sr  -e1 auto -e2  -r -j2 -scr -p reboot restoredisk  $choix sda" ocs_live_extra_param="" keyboard-layouts="fr" ocs_live_batch="no" locales="fr_FR.UTF-8" vga=788 nosplash noprompt fetch=tftp://$se3ip/$CLONEZILLA/filesystem.squashfs
 
 # Choix de boot par défaut:
 default clonezilla
@@ -801,7 +801,7 @@ label disk2
 label clonezilla
 #MENU LABEL Clonezilla restore "$choix" (se3)
 KERNEL $CLONEZILLA/vmlinuz
-APPEND initrd=$CLONEZILLA/initrd.img boot=live config noswap nolocales edd=on nomodeset  ocs_prerun="mount -t cifs //$se3ip/partimag /home/partimag/ -o credentials=/root/credentials "  ocs_live_run="ocs-sr  -e1 auto -e2  -r -j2  -p reboot restoredisk  $choix sda" ocs_live_extra_param="" keyboard-layouts="fr" ocs_live_batch="no" locales="fr_FR.UTF-8" vga=788 nosplash noprompt fetch=tftp://$se3ip/$CLONEZILLA/filesystem.squashfs
+APPEND initrd=$CLONEZILLA/initrd.img boot=live config noswap nolocales edd=on nomodeset  ocs_prerun="mount -t cifs //$se3ip/partimag /home/partimag/ -o credentials=/root/credentials "  ocs_live_run="ocs-sr  -e1 auto -e2  -r -j2 -scr -p reboot restoredisk  $choix sda" ocs_live_extra_param="" keyboard-layouts="fr" ocs_live_batch="no" locales="fr_FR.UTF-8" vga=788 nosplash noprompt fetch=tftp://$se3ip/$CLONEZILLA/filesystem.squashfs
 
 # Choix de boot par défaut:
 default clonezilla
